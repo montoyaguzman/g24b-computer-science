@@ -5,6 +5,11 @@
 const elementForm = document.querySelector('#language-form');
 const ulElement = document.querySelector('#list-languages');
 let languages = [];
+const STATUS = {
+    STAND_BY: 'standBy',
+    START: 'start',
+    FINISHED: 'finished'
+};
 // const myInput = document.querySelector('.myInput');
 // const myInput = document.querySelector('div');
 
@@ -52,11 +57,9 @@ const renderViewlanguages = (languages) => {
         const buttonElement = document.createElement('button');
         // agregar estilos
         liElement.classList.add('list-group-item', 'd-flex', 'justify-content-between');
-        iconElement.classList.add('bi', 'bi-pause-circle-fill', 'text-warning');
-        buttonElement.classList.add('bi', 'bi-trash3-fill');
+        buttonElement.classList.add('bi', 'bi-trash3-fill', 'text-danger');
         // validar el estatus del icon
-        const status = getStatus(index, element.status);
-        setStatus(iconElement, status);
+        setTypeIcon(iconElement, element.status);
         // agregar atributos
         buttonElement.setAttribute('index', index);
         // agregar evento al boton
@@ -81,10 +84,18 @@ const handleDelete = (event) => {
     renderViewlanguages(languages);
 };
 
-const getStatus = () => {
-
-};
-
-const setStatus = () => {
-
+const setTypeIcon = (iconElement, status) => {
+    // const STAND_BY = STATUS.STAND_BY;
+    // const START = STATUS.START;
+    // const FINISHED = STATUS.FINISHED;
+    // destructuring
+    debugger
+    const { STAND_BY, START, FINISHED } = STATUS;
+    if (status === STAND_BY) {
+        iconElement.classList.add('text-warning', 'bi-pause-circle-fill');
+    } else if (status === START) {
+        iconElement.classList.add('text-primary', 'bi-play-circle-fill');
+    } else if (status === FINISHED) {
+        iconElement.classList.add('text-success', 'bi-check-circle-fill');
+    }
 };
