@@ -101,7 +101,6 @@ const setTypeIcon = (iconElement, status) => {
     }
 };
 
-
 const renderTotal = () => {
     const totalElement = document.querySelector('#language-all');
     const completeElement = document.querySelector('#language-complete');
