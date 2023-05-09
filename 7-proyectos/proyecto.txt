@@ -5,9 +5,11 @@ filtros que introduzca el usuario.
 
 Ejemplos
 * Pokedex.
-* Catálogo de productos.
+* Catálogo de peliculas.
+* Catálogo de superheroes.
 * Formulario de registro.
 * Agenda de citas médicas.
+* Clone de youtube.
 
 Funcionalidades requeridas
 1. Utilizar tecnologias web para construir un sitio que pueda mostrar una lista de productos.
@@ -16,11 +18,13 @@ Funcionalidades requeridas
 4. Generar las vistas de forma dinamica con JS.
 5. Utilizar al menos dos eventos de html.
 6. Usar GRID/Flexbox, Materialize o Bootstrap.
-7. Desplegar a githubpages.
-8. Agregar un menu y footer.
-9. Uso de git, conventional commits y atomic commits.
+7. Agregar un menu y footer.
+8. Uso de git, conventional commits y atomic commits.
+9. Usar buenas practicas del alcance de variables.
 
 Funcionalidades opcionales
 1. Consumir una API o un JSON (podria ser solo un array).
 2. Navegacion a otras paginas (pagina de detalle, de contacto, etc).
-3. 
+3. Desplegar a githubpages.
+4. Utilizar constantes para la comparacion de valores y nombres de variables/funciones entendibles.
+5. Hacer una misma parte de la funcionalidad con javascript y replicarla con es6.
