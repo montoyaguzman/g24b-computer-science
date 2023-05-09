@@ -12,8 +12,10 @@ Requerimientos funcionales:
 1. La aplicación debe permitir a los usuarios crear notas y guardarlas en una lista.
 2. Cada nota debe tener un título, un contenido y una fecha de creación.
 3. La aplicación debe permitir a los usuarios editar y eliminar notas existentes.
-4. Se deben crear subclases como "Nota simple", "Lista de tareas", "Recordatorio", etc., que hereden de la clase "Nota" y añadan propiedades específicas para cada tipo de nota.
-5. La aplicación debe permitir al usuario seleccionar el tipo de nota que desea crear y mostrar los campos relevantes para ese tipo de nota.
+4. Se deben crear subclases como "Nota simple", "Lista de tareas", "Recordatorio", etc., que 
+    hereden de la clase "Nota" y añadan propiedades específicas para cada tipo de nota.
+5. La aplicación debe permitir al usuario seleccionar el tipo de nota que desea crear y mostrar 
+los campos relevantes para ese tipo de nota.
 
 Requerimientos no funcionales:
 
