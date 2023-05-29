@@ -149,6 +149,14 @@ Es el estándar que la empresa del mismo nombre definió para JavaScript en el a
 
 ## Protototipos y POO
 
+Un prototipo es un objeto que sirve como modelo para crear otros objetos. En programación, se utiliza para compartir propiedades y métodos entre diferentes objetos.
+
+En JavaScript, cada objeto tiene un prototipo. Este prototipo se utiliza para buscar propiedades y métodos que no están definidos directamente en el objeto. Si una propiedad o método no se encuentra en el objeto, JavaScript busca en su prototipo, y si no lo encuentra allí, sigue buscando en el prototipo del prototipo, y así sucesivamente, hasta llegar al prototipo base que es el objeto global.
+
+Por ejemplo, si tenemos un objeto llamado "persona" que tiene un método llamado "saludar", pero no tiene una propiedad llamada "edad", y queremos acceder a la propiedad "edad" de "persona", JavaScript buscará primero en "persona", luego en su prototipo, que es "Object", y finalmente en el prototipo base, que es el objeto global. Si no encuentra la propiedad en ninguno de ellos, devuelve "undefined".
+
+Los prototipos son especialmente útiles en JavaScript porque permiten la herencia de propiedades y métodos entre objetos. Por ejemplo, podemos crear un objeto "estudiante" que herede propiedades y métodos de "persona" a través de su prototipo.
+
 ### Intro
 
 **Tipos de datos en programación (agnóstico del lenguaje)**
